@@ -1,24 +1,16 @@
 import lerValor = require("readline-sync")
 
-let valor : String = lerValor.question("Digite o nome de uma cor:")
+
 
 const cores : Array<String> = new Array<String>
 
-while(cores.length < 5){
-   cores.filter(()=>{
-    
-   })
-}
 
-for (const element of cores) {
-    
-    console.log(element + '\n');
-    
+while(cores.length <5){
+    let valor : String = lerValor.question("Digite o nome de uma cor:")
+    cores.push(valor)
 }
 
 console.log('====================================');
-console.log('\n');
+console.log(cores);
 console.log('====================================');
-for (const element of cores.sort()) {
-    console.log(element + '\n');
-}
+console.log(cores.sort());
